@@ -5,10 +5,14 @@ Name: Irene Alisjahbana
 
 The combined fields shows those values are obtained by combining consumption data with a neighboring ZIP code to fulfill the aggregation criteria based on the California Public Utilities Commission. The purpose of this is to retain anonymity of the customers; so that we can’t pinpoint each customer’s electricity consumption. This information might affect the analysis because the combination of data from other ZIP  codes might not accurately reflect the energy consumption of that specific ZIP code. 
 
+Answer is accurate and consistent with mine.
+
 
 #### Q2: Why are the “Average” fields likely not useful for our analyses?
 
 The "Average" field might not be useful because it will not show the distribution of consumption between the customers in the specific zip code. Some customers might consume larger number of KwH per quarter, whereas others might only be consuming a little.  Using the average might not accurately represent the electricity and gas usage of the area. 
+
+Answer is accurate per discussion in class.
 
 
 #### Q3: What type of calculations should "X" and "Y" be in the step above? Why?
@@ -21,7 +25,7 @@ Q3 Response Here (<100 words)
 
 The total KBTU combined electricity and gas consumption in PG&E territory in 2017 is 2.73e11 kBTU. The average annual electricity consumption per customer is 21951.5 kBTU and the average annual gas consumption per customer is 43258 kBTU. Note that the values obtained here are the results of the modified dataset in which the duplicate for month 9 in the Q4 was deleted before the analysis. 
 
-
+I agree with your strategy to delete the duplicated month 9. I also identified this error in my total customers calculations, but I should have adjusted the usage numbers as well.
 
 #### Q5: How would you explain the results of this chart to an average property owner in Northern California? What would be the value of conducting further "seasonal" analyses of energy use, compared to "year-long" analyses, and how would you define seasonal boundaries?
 
@@ -29,12 +33,13 @@ From the chart, it can be seen that gas usage is extremely high in the first qua
 
 By conducting seasonal analyses of energy use versus year-long analyses, we can see the distribution of energy uses clearly. Such as the one seen in the chart, by doing seasonal analyses, we can understand the trends of gas usage vs electricity usage that is different for different periods of time. I would define the seasonal boundaries as winter and summer, in which winter is the time where gas usage is higher than electricity usage and summer is the time where electricity usage is higher than gas usage. 
 
+Answer is spot on.
 
 #### Q6: Explain your choice of formula for "avgkbtu".
 
 First, I grabbed the total number of customers for electricity and gas for a specific ZIP code. Then I took the maximum number between the two. The reason why I did this is because some customers would only have electricity and others only gas, and to be more conservative I took the maximum. I then divided the total kBTU of the zipcode with the number of customers. Because the number of customers is a cumulative value throughout the year, the division will result in the average annual energy consumption per month. Therefore, I had to multiply it by 12 to obtain the annual value. 
 
-
+Your logic for identifying the number of customers is consistent with what Derek said in class. It is fair to assume that the majority of customers have both electricity and gas. 
 
 #### Q7 Paste a publicly viewable link to your Slides.
 
@@ -46,6 +51,7 @@ https://docs.google.com/presentation/d/14duGwbwPZvuCNpZdu4EKMpnpZB_NZ8Z8cvqYGl_q
 
 I used Stanford’s ZIP code. Based on the images, it can be seen that Stanford has a very high average but has a very low total usage, which is similar to what I would expect. This is because Stanford is a campus and not a packed residential area where there would be lots of customers that use energy. Because there are not as many residents, the total energy usage is also low. But on the other hand, the fact that Stanford doesn’t have as many residents also cause the average energy usage to be really high. 
 
+I don't necessarily agree that a low number of residents with high average energy usage. I think a more plausible explanation could be that Stanford students likely perform more energy intensive activities, like research, than the average zip code.
 
 #### Q9 Any other reactions to completing Pass One? What was especially challenging or surprising in the workflow? How might you expand on this analysis if you had more time?
 
@@ -53,7 +59,7 @@ It took longer to complete Pass One than I thought. It was partly because of all
 
 If I had more time, I would probably spend more time analyzing the results and think about why the results are the way they are by going through some of the details, instead of just looking at the total values for example. I might also look at the energy usage separately (gas and electricity) as opposed to the total usage immediately. 
 
-
+I agree that if the setup hadn't taken more time I would have had more time to dive deeper into the details of the data.
 
 #### Q10 How would you compare the experienced or apparent work involved, as well as the usefulness of the outcome, of Pass One vs. Pass Two? How would you rate the difficulty of this assignment?
 
